@@ -1,0 +1,33 @@
+header {
+    grid-area: header;
+
+    text-align: center;
+    background: url(../img/header_bg.jpg);
+    background-size: auto 100%;
+
+    nav {
+        margin: 20px 0;
+
+        ul li {
+            display: inline;
+            color: white;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            span {
+                margin: 0 20px;
+            }
+
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        color: white;
+        width: 100%;
+    }
+}
