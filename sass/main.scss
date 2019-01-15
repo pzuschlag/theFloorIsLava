@@ -8,4 +8,10 @@
 @import "components/grid";
 @import "components/header";
 @import "components/navigation";
-// @import "components/sections";@import "components/footer";@import "components/footer";
+// @import "components/sections";
+@import "components/footer";
+
+
+body {
+    background-color: $background-color;
+}
