@@ -3,17 +3,21 @@ header {
 
     text-align: center;
     background: url(../img/header_bg.jpg);
-    background-size: auto 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     nav {
+        position: fixed;
+        width: 100%;
         margin: 20px 0;
 
         ul li {
             display: inline;
-            color: white;
+            color: $text-color;
 
             a {
-                color: white;
+                color: $text-color;
                 text-decoration: none;
             }
 
@@ -25,9 +29,11 @@ header {
     }
 
     h1 {
+        font-size: 4em;
         position: absolute;
-        top: 50%;
-        color: white;
         width: 100%;
+        top: 50%;
+        color: $text-color;
+        @include text-outline(#292929);
     }
 }
