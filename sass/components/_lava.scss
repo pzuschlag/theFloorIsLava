@@ -1,0 +1,26 @@
+#lava-wave {
+    background-image: url(../img/lava_wave.png);
+    height: 40px;
+    margin-top: -40px;
+    position: sticky;
+    bottom: 0;
+    grid-area: footer;
+
+    animation: wave 500s infinite linear;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes wave {
+    from {
+        background-position-x: 0%;
+    }
+
+    to {
+        background-position: 1000%;
+    }
+}
