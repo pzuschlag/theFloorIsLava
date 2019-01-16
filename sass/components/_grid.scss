@@ -1,13 +1,16 @@
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
 
     grid-template-areas:
         "header"
         "content1"
+        "."
         "content2"
+        "."
         "content3"
+        "."
         "content4"
         "footer";
 }
