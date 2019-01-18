@@ -1,0 +1,12 @@
+aside{
+    &:nth-child(3) {grid-area: aside1;}
+    &:nth-child(5) {grid-area: aside2;}
+    &:nth-child(7) {grid-area: aside3;}
+
+
+    background: $lava-color1;
+
+    canvas{
+        // margin-top: -210px;
+    }
+}
