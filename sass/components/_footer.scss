@@ -1,6 +1,37 @@
 footer {
     grid-area: footer;
 
-    background-color: $sekundary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-color: $sekundary_color;
     text-align: center;
+
+    img[alt="instagram"] {
+        height: 35px;
+    }
+
+    div {
+        margin: 20px 0 0 0;
+
+        &>div {
+            margin: 20px 0 40px 0;
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+
+        .grav {
+            margin-bottom: -5px;
+            -webkit-transition: -webkit-transform 0.8s ease-in-out;
+            transition: transform 0.8s ease-in-out;
+
+            &:hover {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
