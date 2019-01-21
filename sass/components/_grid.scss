@@ -1,16 +1,16 @@
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 100vh 2fr 1fr 2fr 1fr 2fr 1fr 2.5fr 0.5fr;
 
     grid-template-areas:
         "header"
         "content1"
-        "."
+        "aside1"
         "content2"
-        "."
+        "aside2"
         "content3"
-        "."
+        "aside3"
         "content4"
         "footer";
 }
