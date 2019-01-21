@@ -84,27 +84,27 @@
             </p>
 
             <div>
-                <form>
-                    <label for="input_name">Name</label>
+                <form name="form" onsubmit="return validateForm()">
+                    <label for="name">Name</label>
                     <br>
-                    <input type="text" name="input_name">
+                    <input type="text" name="name" onblur="validateName(this)" required>
                     <br><br>
-                    <label for="input_adress">Adresse</label>
+                    <label for="adress">Adresse</label>
                     <br>
-                    <input type="text" name="input_adress">
+                    <input type="text" name="adress" onblur="validateAdress(this)" required>
                     <br><br>
-                    <label for="input_zip">PLZ</label>
+                    <label for="zip">PLZ</label>
                     <br>
-                    <input type="text" name="input_zip">
+                    <input type="text" name="zip" onblur="validateZip(this)" required>
                     <br><br>
-                    <label for="input_city">Stadt</label>
+                    <label for="city">Stadt</label>
                     <br>
-                    <input type="text" name="input_city">
+                    <input type="text" name="city" onblur="validateCity(this)" required>
                     <br><br>
-                    <label for="select_animal">Tier</label>
+                    <label for="motive">Motiv</label>
                     <br>
-                    <select if="select_animal" name="animal">
-                        <option value="" selected disabled hidden>Dropdown</option>
+                    <select if="motive" name="motive" onblur="validateMotive(this)" required>
+                        <!-- <option value="" selected disabled hidden>Motiv</option> -->
                         <option value="lama">Lama</option>
                         <option value="turtle">Schildkröte</option>
                         <option value="whale">Wal</option>
@@ -138,7 +138,6 @@
 
     </footer>
 </body>
-
     <script src="js/lava-effect.js"></script>
-
+    <script src="js/validation.js"></script>
 </html>

@@ -1,0 +1,67 @@
+section:nth-child(8) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        margin: 40px 0 40px 0;
+        width: 33%;
+        text-align: center;
+
+        b i {
+            background-image:linear-gradient(180deg,$lava_color1,$lava_color2,$lava_color3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+
+        form {
+
+            input {
+                width: 250px;
+            }
+
+            input, select {
+                padding: 5px;
+                border: 2px solid rgba(255, 255, 255, 0.4);
+                border-radius: 5px;
+                background: transparent;
+                color: #ffffff;
+                transition: all 0.3s ease;
+                font-size: 1.05em;
+
+                &:focus {
+                    outline: none !important;
+                    border-color: $lava_color1;
+                }
+              }
+
+            input[type="submit"] {
+                transition: all 0.3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $lava_color2;
+                    border-color: $lava_color1;
+                }
+            }
+        }
+        
+        img {
+            width: 40%;
+            height: 40%;
+            margin: 45px 0 0 100px;
+        }
+    }
+        
+}
