@@ -1,12 +1,24 @@
 #lava-wave {
     background-image: url(../img/lava_wave.png);
-    height: 40px;
-    margin-top: -40px;
+    height: 30px;
+    margin-top: -30px;
     position: sticky;
     bottom: 0;
     grid-area: footer;
 
-    animation: wave 500s infinite linear;
+    animation: wave 750s infinite linear;
+}
+
+
+#lava-wave1 {
+    background-image: url(../img/lava_wave1.png);
+    height: 30px;
+    margin-top: 118px;
+    position: sticky;
+    bottom: 0;
+    grid-area: footer;
+
+    animation: wave 750s infinite linear;
 }
 
 .sticky {
