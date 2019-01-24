@@ -3,10 +3,25 @@ aside{
     &:nth-child(5) {grid-area: aside2;}
     &:nth-child(7) {grid-area: aside3;}
 
+    background: $lava-color3;
+    z-index: 1;
+    
 
-    background: $lava-color1;
+    .aside-top{
+        background-image: url(../img/aside_top_small.png);
+        height: 20px;
+        margin-top: -20px;
+    }
 
-    canvas{
-        // margin-top: -210px;
+    .lava-wave{
+        background-image: url(../img/lava_aside.png);
+        height: 100%;
+        animation: wave 650s infinite linear;
+    }
+
+    .aside-bottom{
+        background-image: url(../img/aside_bottom_small.png);
+        height: 20px;
+        margin-top: -10px;
     }
 }
