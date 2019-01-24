@@ -5,19 +5,19 @@
     position: sticky;
     bottom: 0;
     grid-area: footer;
-
-    animation: wave 750s infinite linear;
+    z-index: 5;
+    animation: wave 500s infinite linear;
 }
 
 
 #lava-wave1 {
     background-image: url(../img/lava_wave1.png);
     height: 30px;
-    margin-top: 118px;
+    margin-top: 133px;
     position: sticky;
     bottom: 0;
     grid-area: footer;
-
+    z-index: 5;
     animation: wave 750s infinite linear;
 }
 
