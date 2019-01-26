@@ -1,24 +1,33 @@
-section:nth-child(8) {
+#order {
     display: flex;
     flex-direction: column;
     padding-top: 2em;
     padding-bottom: 4em;
     align-items: center;
 
-    h2 {
-        text-align: center;
-    }
-
-    p {
-        margin: 40px 0 40px 0;
-        width: 33%;
-        text-align: center;
-
-        b i {
-            background-image:linear-gradient(180deg,$lava_color1,$lava_color2,$lava_color3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    .order-text{
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            text-align: center;
         }
+
+        p {
+            margin: 40px 0 40px 0;
+            width: 33%;
+            text-align: center;
+
+            b i {
+                background-image:linear-gradient(180deg,$lava_color1,$lava_color2,$lava_color3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    
+    .order-form{
+        flex-direction: column;
     }
 
     div{
@@ -31,7 +40,7 @@ section:nth-child(8) {
                 width: 250px;
             }
 
-            input, select {
+            input, select, button {
                 padding: 5px;
                 border: 2px solid rgba(255, 255, 255, 0.4);
                 border-radius: 5px;
@@ -44,9 +53,15 @@ section:nth-child(8) {
                     outline: none !important;
                     border-color: $lava_color1;
                 }
-              }
+            }
 
-            input[type="submit"] {
+            p {
+                color: red;
+                visibility: hidden;
+                margin-bottom: -15px;
+            }
+
+            button {
                 transition: all 0.3s ease;
 
                 &:hover {
@@ -61,6 +76,14 @@ section:nth-child(8) {
             width: 40%;
             height: 40%;
             margin: 45px 0 0 100px;
+        }
+    }
+
+
+    @media only screen and (min-width: 728px) {
+        .order-form{
+
+            flex-direction: row;
         }
     }
         
