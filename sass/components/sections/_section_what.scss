@@ -1,0 +1,50 @@
+#what {
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    .floor {
+        display: flex;
+        overflow: hidden;
+        background-image: url(../img/floor2.jpg);
+        height: 100%;
+        width: 100%;
+        float: left;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+
+        .animal {
+            height: 50%;
+            position: absolute;
+            margin-top: 100px;
+        }
+
+        .fire {
+            height: 40%;
+            position: absolute;
+            margin-top: 180px;
+        }
+
+    }
+
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            margin: 20px 0 20px 0;
+        }
+    }
+
+    @media only screen and (min-width: 728px) {
+        flex-direction: row;
+    }
+}
