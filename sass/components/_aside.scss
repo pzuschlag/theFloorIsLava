@@ -5,21 +5,20 @@ aside{
 
     background: $lava-color3;
     z-index: 1;
-    
 
-    .aside-top{
+    .aside-top {
         background-image: url(../img/aside_top_small.png);
         height: 20px;
         margin-top: -20px;
     }
 
-    .lava-wave{
+    .lava-wave {
         background-image: url(../img/lava_aside.png);
         height: 100%;
         animation: wave 650s infinite linear;
     }
 
-    .aside-bottom{
+    .aside-bottom {
         background-image: url(../img/aside_bottom_small.png);
         height: 20px;
         margin-top: -10px;

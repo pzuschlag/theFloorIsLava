@@ -21,14 +21,16 @@ nav {
 
     }
 
-    &.scrolled{
-        background-color: rgba(0,0,0,.75);
+    &.scrolled {
+        background-color: rgba(0, 0, 0, .75);
+
         ul li {
-            color:fff;
-            a, span{
+            color: fff;
+
+            a,
+            span {
                 color: #fff;
             }
         }
-
     }
 }

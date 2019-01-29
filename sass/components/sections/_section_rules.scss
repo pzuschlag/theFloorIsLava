@@ -1,7 +1,7 @@
-#rules{
+#rules {
     display: flex;
     flex-direction: column-reverse;
-    
+
     .floor {
         display: flex;
         overflow: hidden;
@@ -20,14 +20,14 @@
             left: 50%;
         }
 
-        .fire{
+        .fire {
             position: relative;
             width: 100%;
             right: 50%;
         }
     }
 
-    section{
+    section {
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -38,18 +38,21 @@
         text-align: center;
         min-height: 800px;
 
-        h2{
+        h2 {
             @include text-lava();
             margin-bottom: 20px;
         }
-        ol{
+
+        ol {
             padding-left: 20px;
             padding-right: 20px;
-            li{
+
+            li {
                 padding-bottom: 10px;
             }
         }
-        .attention{
+
+        .attention {
             color: red;
             margin-left: 10px;
             margin-right: 20px;
@@ -59,9 +62,9 @@
     @media only screen and (min-width: 728px) {
         flex-direction: row;
 
-        section{
-            ol{
-                li{
+        section {
+            ol {
+                li {
                     padding-top: 10px;
                 }
             }

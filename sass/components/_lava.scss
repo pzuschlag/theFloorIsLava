@@ -7,9 +7,8 @@
     grid-area: footer;
     z-index: 5;
     animation: wave 500s infinite linear,
-               wave2 5s infinite linear;
+        wave2 5s infinite linear;
 }
-
 
 #lava-wave1 {
     background-image: url(../img/lava_wave1.png);
@@ -20,7 +19,7 @@
     grid-area: footer;
     z-index: 5;
     animation: wave 750s infinite linear,
-               wave2 5s infinite linear 2.5s;
+        wave2 5s infinite linear 2.5s;
 }
 
 .sticky {
@@ -43,9 +42,11 @@
     from {
         transform: translateY(0px);
     }
-    50%{
+
+    50% {
         transform: translateY(5px);
     }
+
     to {
         transform: translateY(0px);
     }

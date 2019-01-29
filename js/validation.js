@@ -77,7 +77,7 @@ function validateMotive(element) {
 function validateEmpty(element) {
     if (element.value !== "") {
         return true;
-    } 
+    }
     return false;
 }
 
@@ -88,7 +88,7 @@ function validateEmpty(element) {
  * @param {*} valid 
  */
 function evaluateValidation(element, valid) {
-    if(valid){
+    if (valid) {
         element.style.borderColor = "green";
         element.nextElementSibling.style.visibility = "hidden";
     } else {

@@ -1,7 +1,5 @@
 # theFloorisLava
-Just a webpage, what shows you what "The floor is Lava" is.
-
-
+A website that shows what "The ground is lava" is and how to play it.
 
 ### **Der Boden ist was?**
 
