@@ -1,6 +1,12 @@
 @mixin text-outline($color) {
     text-shadow: 1px 1px 1px $color,
-                 1px -1px 1px $color,
-                 -1px 1px 1px $color,
-                 -1px -1px 1px $color;
+        1px -1px 1px $color,
+        -1px 1px 1px $color,
+        -1px -1px 1px $color;
+}
+
+@mixin text-lava() {
+    background-image: linear-gradient(180deg, $lava-color1, $lava-color2, $lava-color3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,8 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 2fr 1fr 2fr 1fr 2fr 1fr 2.5fr 0.5fr;
-
+    grid-template-rows: 100vh 100vh 100px 200vh 100px 200vh 100px 200vh 200px;
     grid-template-areas:
         "header"
         "content1"
@@ -13,4 +12,8 @@ body{
         "aside3"
         "content4"
         "footer";
+
+    @media only screen and (min-width: 728px) {
+        grid-template-rows: 100vh 800px 100px 800px 100px 800px 100px 850px 200px;
+    }   
 }
