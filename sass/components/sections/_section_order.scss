@@ -1,8 +1,4 @@
 #order {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   .order-text {
     flex-direction: column;
     align-items: center;
@@ -36,7 +32,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 50px;
 
       p,
       label,
@@ -83,8 +78,9 @@
     }
 
     img {
-      width: 80%;
-      height: 80%;
+      margin-top: 50px;
+      width: 70%;
+      height: 70%;
     }
   }
 
@@ -101,13 +97,13 @@
 
       form {
         width: 50%;
-        margin-bottom: 0;
       }
 
       div {
         width: 50%;
 
         img {
+          margin-top: 0;
           width: 50%;
           height: 100%;
         }

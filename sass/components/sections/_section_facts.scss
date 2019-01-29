@@ -16,7 +16,6 @@
 
         .animal {
             position: relative;
-            top: 20%;
             width: 100%;
             height: 100%;
         }
@@ -34,9 +33,6 @@
         text-align: center;
         background-color: transparent;
         color: #000;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
         padding-left: 20px;
         padding-right: 20px;
         min-height: 620px;
@@ -58,17 +54,18 @@
         .floor {
             .animal {
                 height: 60%;
-                top: 50%;
+                top: -30%;
             }
 
             .fire {
                 height: 80%;
-                top: -10%;
+                top: -90%;
             }
         }
 
         section {
             margin-top: 40px;
+            min-height: 450px;
         }
     }
 }

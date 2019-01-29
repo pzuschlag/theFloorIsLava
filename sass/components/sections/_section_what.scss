@@ -1,7 +1,4 @@
 #what {
-    display: flex;
-    flex-direction: column-reverse;
-
     .floor {
         display: flex;
         overflow: hidden;
@@ -29,22 +26,22 @@
             right: 50%;
             top: 20%;
         }
-
     }
 
     section {
-        padding-left: 10px;
-        padding-right: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         text-align: center;
-        min-height: 350px;
+        // min-height: 350px;
 
         h2 {
             @include text-lava();
-            margin-bottom: 20px;
+        }
+
+        p {
+            padding: 20px;
         }
     }
 

@@ -1,14 +1,10 @@
 #rules {
-    display: flex;
-    flex-direction: column-reverse;
-
     .floor {
         display: flex;
         overflow: hidden;
         background-image: url(../img/floor3.jpg);
         width: 100%;
-        height: 100%;
-        float: right;
+        height: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,28 +20,32 @@
             position: relative;
             width: 100%;
             right: 50%;
+            top: 10%;
         }
     }
 
     section {
-        padding-left: 20px;
-        padding-right: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
         text-align: center;
-        min-height: 800px;
+        // min-height: 800px;
 
         h2 {
             @include text-lava();
             margin-bottom: 20px;
         }
 
-        ol {
+        p {
             padding-left: 20px;
             padding-right: 20px;
+        }
+
+        ol {
+            padding-left: 40px;
+            padding-right: 40px;
 
             li {
                 padding-bottom: 10px;
@@ -53,14 +53,16 @@
         }
 
         .attention {
-            color: red;
-            margin-left: 10px;
-            margin-right: 20px;
+            @include text-lava();
         }
     }
 
     @media only screen and (min-width: 728px) {
         flex-direction: row;
+
+        .floor{
+            height: 100%;
+        }
 
         section {
             ol {
