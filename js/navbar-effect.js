@@ -7,11 +7,4 @@ function navBarEffect() {
     navBar.classList.remove("scrolled");
   }
 }
-
-
 window.addEventListener('scroll', navBarEffect);
-
-// window.onscroll = function () {
-//   moveAnimals();
-//   navBarEffect();
-// };
