@@ -1,121 +1,118 @@
 #order {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .order-text {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 
+    h2 {
+      @include text-lava();
+      text-align: center;
+    }
+
+    p {
+      margin: 40px 0 20px 0;
+      text-align: center;
+
+      b i {
+        background-image: linear-gradient(180deg, $lava_color1, $lava_color2, $lava_color3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .order-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+
+      p,
+      label,
+      input,
+      select {
+        width: 250px;
+      }
+
+      button {
+        width: 120px;
+      }
+
+      input,
+      select,
+      button {
+        padding: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        background: transparent;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        font-size: 1.05em;
+
+        &:focus {
+          outline: none !important;
+          border-color: $lava_color1;
+        }
+      }
+
+      p {
+        color: red;
+        visibility: hidden;
+      }
+
+      button {
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          background: $lava_color2;
+          border-color: $lava_color1;
+        }
+      }
+    }
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  @media only screen and (min-width: 728px) {
     .order-text {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-
-        h2 {
-            @include text-lava();
-            text-align: center;
-        }
-
-        p {
-            margin: 40px 0 20px 0;
-            text-align: center;
-
-            b i {
-                background-image: linear-gradient(180deg, $lava_color1, $lava_color2, $lava_color3);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
+      p {
+        width: 33%;
+      }
     }
 
     .order-form {
-        flex-direction: column;
-        align-items: center;
-    }
+      width: 100%;
+      flex-direction: row;
 
-    div {
-        display: flex;
-        justify-content: center;
+      form {
+        width: 50%;
+        margin-bottom: 0;
+      }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 50px;
-
-            p,
-            label,
-            input,
-            select {
-                width: 250px;
-            }
-
-            button {
-                width: 120px;
-            }
-
-            input,
-            select,
-            button {
-                padding: 5px;
-                border: 2px solid rgba(255, 255, 255, 0.4);
-                border-radius: 5px;
-                background: transparent;
-                color: #ffffff;
-                transition: all 0.3s ease;
-                font-size: 1.05em;
-
-                &:focus {
-                    outline: none !important;
-                    border-color: $lava_color1;
-                }
-            }
-
-            p {
-                color: red;
-                visibility: hidden;
-            }
-
-            button {
-                transition: all 0.3s ease;
-
-                &:hover {
-                    cursor: pointer;
-                    background: $lava_color2;
-                    border-color: $lava_color1;
-                }
-            }
-        }
-
+      div {
+        width: 50%;
         img {
-            width: 80%;
-            height: 80%;
+          width: 50%;
+          height: 100%;
         }
+      }
     }
-
-
-    @media only screen and (min-width: 728px) {
-
-        .order-text {
-            p {
-                width: 33%;
-            }
-        }
-
-        .order-form {
-            width: 100%;
-            flex-direction: row;
-
-            form {
-                width: 50%;
-                margin-bottom: 0;
-            }
-
-            div {
-                width: 50%;
-                img{
-                    width: initial;
-                    height: initial;
-                }
-            }
-        }
-    }
-
+  }
 }
