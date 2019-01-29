@@ -162,7 +162,7 @@
                     <input type="text" name="city" onblur="validateCity(this)" required>
                     <p>Bitte gib eine gültige Stadt ein.</p>
                     <label for="motive">Motiv</label>
-                    <select if="motive" name="motive" onblur="validateMotive(this)" required>
+                    <select id="motive" name="motive" onchange="swapImage()" required>
                         <option value="lama">Lama</option>
                         <option value="turtle">Schildkröte</option>
                         <option value="whale">Wal</option>
@@ -172,7 +172,7 @@
                     <button type="button" onclick="validateForm()">Her Damit!</button>
                 </form>
                 <div>
-                    <img src="img/sticker.png" alt="sticker">
+                    <img id="sticker" src="img/sticker.png" alt="Ein cooler Sticker mit einem Tier das 'Der Boden ist Lava' spielt">
                 </div>
                 </div>
         </section>
@@ -203,8 +203,8 @@
     </div>
 </body>
     <script src="js/navbar-effect.js"></script>
-    <script src="js/animals.js"></script>
+    <script src="js/swapImage.js"></script>
+    <script src="js/moveAnimals.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/overlay.js"></script>
-    <!-- <script src="js/lava-effect.js"></script> -->
 </html>
