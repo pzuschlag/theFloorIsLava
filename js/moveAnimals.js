@@ -13,6 +13,6 @@ function moveAnimals(animal) {
   }
 }
 
-window.addEventListener('scroll', moveAnimals(animals[0]));
-window.addEventListener('scroll', moveAnimals(animals[1]));
-window.addEventListener('scroll', moveAnimals(animals[2]));
+window.addEventListener('scroll', function () { moveAnimals(animals[0]); });
+window.addEventListener('scroll', function () { moveAnimals(animals[1]); });
+window.addEventListener('scroll', function () { moveAnimals(animals[2]); });
