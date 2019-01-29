@@ -9,16 +9,17 @@ nav {
         display: inline;
         color: $text-color;
         color: #000;
+        
+        &:nth-child(even){
+            margin-right: -10px;
+            margin-left: -10px;
+        }
 
         a {
+            padding: 10px;
             color: #000;
             text-decoration: none;
         }
-
-        span {
-            margin: 0 20px;
-        }
-
     }
 
     &.scrolled {
