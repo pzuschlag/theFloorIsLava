@@ -1,39 +1,48 @@
 header {
     grid-area: header;
 
+    display: flex;
+    justify-content: center;
+
+
     text-align: center;
-    background: url(../img/header_bg.jpg);
+    background: url(../img/floor4.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
 
-    nav {
-        position: fixed;
+    .animal{
         width: 100%;
-        margin: 20px 0;
+        height: 50%;
+        top: 5%;
+        position: relative;
+    }
 
-        ul li {
-            display: inline;
-            color: $text-color;
-
-            a {
-                color: $text-color;
-                text-decoration: none;
-            }
-
-            span {
-                margin: 0 20px;
-            }
-
-        }
+    .fire{
+        top: 50%;
+        position: absolute;
+        height: 70%;
+        width: 100%;
     }
 
     h1 {
         font-size: 4em;
         position: absolute;
-        width: 100%;
-        top: 50%;
+        // height: 100%;
+        top: 38%;
         color: $text-color;
-        @include text-outline(#292929);
+
+        @include text-lava();
+        // @include text-outline(#292929);
+    }
+
+    @media only screen and (min-width: 728px) {
+        .animal{
+            height: 80%;
+        }
+
+        h1{
+            top: 60%;
+        }
     }
 }
