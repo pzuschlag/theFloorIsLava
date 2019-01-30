@@ -91,8 +91,10 @@ function evaluateValidation(element, valid) {
     if (valid) {
         element.style.borderColor = "green";
         element.nextElementSibling.style.visibility = "hidden";
+        element.style.animation = "";
     } else {
         element.style.borderColor = "red";
         element.nextElementSibling.style.visibility = "visible";
+        element.style.animation = "wrongInput 0.5s 1 linear";
     }
 }
