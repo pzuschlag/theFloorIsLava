@@ -9,11 +9,11 @@ function moveFires(fire) {
     var dist = (windowTopPos + windowHeight / 2) - (fire.offsetTop + fire.offsetHeight / 2);
     var ref = dist / (windowHeight / 10);
 
-    fire.style.transform = 'translateY(' + (parseInt((ref * 10) / 4) * -1) + "%)";
+    fire.style.transform = "translateY(" + parseInt(ref * (-2.5)) + "%)";
   }
 }
 
-window.addEventListener('scroll', function () {
+window.addEventListener("scroll", function () {
   for (var i = 0; i < fires.length; i++) {
     moveFires(fires[i]);
   }

@@ -3,4 +3,4 @@ function swapImage() {
 	var select = document.getElementById("motive");
 
 	image.src = "img/sticker_" + select.value + ".svg";
-};
+}

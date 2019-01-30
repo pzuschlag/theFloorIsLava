@@ -7,4 +7,4 @@ function navBarEffect() {
     navBar.classList.remove("scrolled");
   }
 }
-window.addEventListener('scroll', navBarEffect);
+window.addEventListener("scroll", navBarEffect);
