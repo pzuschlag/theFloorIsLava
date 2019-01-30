@@ -2,7 +2,7 @@
     .floor {
         display: flex;
         overflow: hidden;
-        background-image: url(../img/floor3.jpg);
+        background-image: url(../img/floor2.jpg);
         width: 100%;
         height: 50%;
         background-position: center;
@@ -12,15 +12,13 @@
 
         .animal {
             position: relative;
-            width: 100%;
-            left: 50%;
+            height: 100%;
         }
 
         .fire {
+            height: 100%;
             position: relative;
-            width: 100%;
-            right: 50%;
-            top: 10%;
+            top: -85%;
         }
     }
 
