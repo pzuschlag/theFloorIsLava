@@ -1,53 +1,53 @@
 #lava-wave {
-    background-image: url(../img/lava_wave.png);
-    height: 30px;
-    margin-top: -30px;
-    position: sticky;
-    bottom: 0;
-    grid-area: footer;
-    z-index: 5;
-    animation: wave 500s infinite linear,
-        wave2 5s infinite linear;
+  z-index: 5;
+  position: sticky;
+  bottom: 0;
+  height: 30px;
+  margin-top: -30px;
+  background-image: url(../img/lava_wave.png);
+  grid-area: footer;
+  animation: wave 500s infinite linear,
+    wave2 5s infinite linear;
 }
 
 #lava-wave1 {
-    background-image: url(../img/lava_wave1.png);
-    height: 30px;
-    margin-top: 133px;
-    position: sticky;
-    bottom: 0;
-    grid-area: footer;
-    z-index: 5;
-    animation: wave 750s infinite linear,
-        wave2 5s infinite linear 2.5s;
+  z-index: 5;
+  position: sticky;
+  bottom: 0;
+  height: 30px;
+  margin-top: 133px;
+  background-image: url(../img/lava_wave1.png);
+  grid-area: footer;
+  animation: wave 750s infinite linear,
+    wave2 5s infinite linear 2.5s;
 }
 
 .sticky {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @keyframes wave {
-    from {
-        background-position-x: 0%;
-    }
+  from {
+    background-position: 0%;
+  }
 
-    to {
-        background-position: 1000%;
-    }
+  to {
+    background-position: 1000%;
+  }
 }
 
 @keyframes wave2 {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    50% {
-        transform: translateY(5px);
-    }
+  50% {
+    transform: translateY(5px);
+  }
 
-    to {
-        transform: translateY(0px);
-    }
+  to {
+    transform: translateY(0px);
+  }
 }

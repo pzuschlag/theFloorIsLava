@@ -1,9 +1,9 @@
 #order {
   .order-text {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     margin-top: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
 
     h2 {
       @include text-lava();
@@ -21,8 +21,8 @@
   }
 
   .order-form {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   div {
@@ -31,12 +31,12 @@
 
     form {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
 
-      p,
-      label,
       input,
+      label,
+      p,
       select {
         width: 250px;
       }
@@ -45,47 +45,47 @@
         width: 120px;
       }
 
+      button,
       input,
-      select,
-      button {
+      select {
         padding: 5px;
+        color: #ffffff;
         border: 2px solid rgba(255, 255, 255, 0.4);
         border-radius: 5px;
         background: transparent;
-        color: #ffffff;
-        transition: all 0.3s ease;
         font-size: 1.05em;
+        transition: all 0.3s ease;
 
         &:focus {
-          outline: none !important;
           border-color: $lava_color1;
+          outline: none !important;
         }
       }
 
       p {
-        color: red;
         visibility: hidden;
+        color: red;
       }
 
       button {
         transition: all 0.3s ease;
 
         &:hover {
-          cursor: pointer;
-          background: $lava_color2;
           border-color: $lava_color1;
+          background: $lava_color2;
+          cursor: pointer;
         }
       }
     }
 
     img {
-      margin-top: 50px;
       width: 70%;
       height: 70%;
+      margin-top: 50px;
     }
   }
 
-  @media only screen and (min-width: 728px) {
+  @media only screen and (min-width : 728px) {
     .order-text {
       margin-top: 70px;
 
@@ -109,10 +109,10 @@
         height: 100%;
 
         img {
-          height: 70%;
           position: relative;
           top: 10%;
           width: initial;
+          height: 70%;
           margin-top: 0;
         }
       }
@@ -122,7 +122,7 @@
 
 @keyframes wrongInput {
   from {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
 
   20% {
@@ -143,6 +143,5 @@
 
   to {
     transform: translateX(0px);
-    ;
   }
 }

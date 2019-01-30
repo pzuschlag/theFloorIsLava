@@ -1,19 +1,18 @@
 body {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100vh 800px 100px 1200px 100px 1000px 100px 1150px 200px;
-    grid-template-areas:
-        "header"
-        "content1"
-        "aside1"
-        "content2"
-        "aside2"
-        "content3"
-        "aside3"
-        "content4"
-        "footer";
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100vh 800px 100px 1200px 100px 1000px 100px 1150px 200px;
+  grid-template-areas: "header"
+                       "content1"
+                       "aside1"
+                       "content2"
+                       "aside2"
+                       "content3"
+                       "aside3"
+                       "content4"
+                       "footer";
 
-    @media only screen and (min-width: 728px) {
-        grid-template-rows: 100vh 800px 100px 800px 100px 850px 100px 850px 200px;
-    }
+  @media only screen and (min-width: 728px) {
+    grid-template-rows: 100vh 800px 100px 800px 100px 850px 100px 850px 200px;
+  }
 }

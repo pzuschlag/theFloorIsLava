@@ -1,41 +1,39 @@
 footer {
-    grid-area: footer;
+  display: flex;
+  background-color: $lava_color2;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: footer;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  img[alt="instagram"] {
+    height: 35px;
+  }
 
-    background-color: $lava_color2;
-    text-align: center;
+  div {
+    margin: 30px 0 0 0;
 
-    img[alt="instagram"] {
-        height: 35px;
+    &>div {
+      margin: 10px 0 50px 0;
+    }
+  }
+
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $lava_color1;
+
+    a {
+      text-decoration: none;
     }
 
-    div {
-        margin: 30px 0 0 0;
+    .grav {
+      margin-bottom: -5px;
+      transition: transform 0.8s ease-in-out;
 
-        &>div {
-            margin: 10px 0 50px 0;
-        }
+      &:hover {
+        transform: rotate(360deg);
+      }
     }
-
-    p {
-        background-color: $lava_color1;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        a {
-            text-decoration: none;
-        }
-
-        .grav {
-            margin-bottom: -5px;
-            transition: transform 0.8s ease-in-out;
-
-            &:hover {
-                transform: rotate(360deg);
-            }
-        }
-    }
+  }
 }

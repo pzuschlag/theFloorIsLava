@@ -1,73 +1,72 @@
 #rules {
+  .floor {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background-image: url(../img/floor2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+
+    .animal {
+      position: relative;
+      height: 100%;
+    }
+
+    .fire {
+      position: relative;
+      top: -85%;
+      height: 100%;
+    }
+  }
+
+  section {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      @include text-lava();
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    ol {
+      padding-right: 40px;
+      padding-left: 40px;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+
+    .attention {
+      @include text-lava();
+    }
+  }
+
+  @media only screen and (min-width : 728px) {
+    flex-direction: row;
+
     .floor {
-        display: flex;
-        overflow: hidden;
-        background-image: url(../img/floor2.jpg);
-        width: 100%;
-        height: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex-direction: column;
-
-        .animal {
-            position: relative;
-            height: 100%;
-        }
-
-        .fire {
-            height: 100%;
-            position: relative;
-            top: -85%;
-        }
+      height: 100%;
     }
 
     section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        // min-height: 800px;
-
-        h2 {
-            @include text-lava();
-            margin-bottom: 20px;
+      ol {
+        li {
+          padding-top: 10px;
         }
-
-        p {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        ol {
-            padding-left: 40px;
-            padding-right: 40px;
-
-            li {
-                padding-bottom: 10px;
-            }
-        }
-
-        .attention {
-            @include text-lava();
-        }
+      }
     }
-
-    @media only screen and (min-width: 728px) {
-        flex-direction: row;
-
-        .floor{
-            height: 100%;
-        }
-
-        section {
-            ol {
-                li {
-                    padding-top: 10px;
-                }
-            }
-        }
-    }
+  }
 }

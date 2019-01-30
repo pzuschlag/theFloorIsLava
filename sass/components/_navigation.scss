@@ -1,37 +1,37 @@
 nav {
-    position: fixed;
-    width: 100%;
-    padding: 10px 0;
-    background-color: transparent;
-    z-index: 10;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+
+  ul li {
+    display: inline;
+    color: $text-color;
+    color: #000;
+
+    &:nth-child(even) {
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+
+    a {
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  &.scrolled {
+    background-color: rgba(0, 0, 0, .75);
 
     ul li {
-        display: inline;
-        color: $text-color;
-        color: #000;
-        
-        &:nth-child(even){
-            margin-right: -10px;
-            margin-left: -10px;
-        }
+      color: #fff;
 
-        a {
-            padding: 10px;
-            color: #000;
-            text-decoration: none;
-        }
+      a,
+      span {
+        color: #fff;
+      }
     }
-
-    &.scrolled {
-        background-color: rgba(0, 0, 0, .75);
-
-        ul li {
-            color: fff;
-
-            a,
-            span {
-                color: #fff;
-            }
-        }
-    }
+  }
 }

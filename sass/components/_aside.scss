@@ -1,26 +1,34 @@
-aside{
-    &:nth-child(3) {grid-area: aside1;}
-    &:nth-child(5) {grid-area: aside2;}
-    &:nth-child(7) {grid-area: aside3;}
+aside {
+  z-index: 1;
+  background: $lava-color3;
 
-    background: $lava-color3;
-    z-index: 1;
+  &:nth-child(3) {
+    grid-area: aside1;
+  }
 
-    .aside-top {
-        background-image: url(../img/aside_top_small.png);
-        height: 20px;
-        margin-top: -20px;
-    }
+  &:nth-child(5) {
+    grid-area: aside2;
+  }
 
-    .lava-wave {
-        background-image: url(../img/lava_aside.png);
-        height: 100%;
-        animation: wave 650s infinite linear;
-    }
+  &:nth-child(7) {
+    grid-area: aside3;
+  }
 
-    .aside-bottom {
-        background-image: url(../img/aside_bottom_small.png);
-        height: 20px;
-        margin-top: -10px;
-    }
+  .aside-top {
+    height: 20px;
+    margin-top: -20px;
+    background-image: url(../img/aside_top_small.png);
+  }
+
+  .lava-wave {
+    height: 100%;
+    background-image: url(../img/lava_aside.png);
+    animation: wave 650s infinite linear;
+  }
+
+  .aside-bottom {
+    height: 20px;
+    margin-top: -10px;
+    background-image: url(../img/aside_bottom_small.png);
+  }
 }

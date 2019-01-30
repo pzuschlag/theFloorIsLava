@@ -1,83 +1,82 @@
 #facts {
+  display: flex;
+  overflow: hidden;
+
+  .floor {
     display: flex;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/floor1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
 
+    div {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+
+      .animal {
+        position: relative;
+        top: 10%;
+        height: 110%;
+      }
+
+      .fire {
+        position: relative;
+        top: -80%;
+        height: 110%;
+      }
+    }
+  }
+
+  section {
+    min-height: 620px;
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #000;
+    background-color: transparent;
+    text-align: center;
+
+    h2 {
+      @include text-lava();
+      margin: 20px 0 40px 0;
+    }
+
+    ul {
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgba(126, 120, 113, 0.6);
+
+      li {
+        padding-top: 10px;
+        list-style: none;
+      }
+    }
+  }
+
+  @media only screen and (min-width : 728px) {
     .floor {
-        background-image: url(../img/floor1.jpg);
-        width: 100%;
-        height: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-
-            .animal {
-                position: relative;
-                height: 110%;
-                top: 10%;
-            }
-
-            .fire {
-                position: relative;
-                height: 110%;
-                top: -80%;
-
-            }
+      div {
+        .animal {
+          top: -10%;
+          height: 140%;
         }
+
+        .fire {
+          top: -130%;
+          height: 140%;
+        }
+      }
     }
 
     section {
-        margin-top: 20px;
-        text-align: center;
-        background-color: transparent;
-        color: #000;
-        padding-left: 20px;
-        padding-right: 20px;
-        min-height: 620px;
-
-        h2 {
-            @include text-lava();
-            margin: 20px 0 40px 0;
-        }
-
-        ul {
-            background-color: rgba(126, 120, 113, 0.6);
-            border-radius: 20px;
-            padding: 20px;
-
-            li {
-                list-style: none;
-                padding-top: 10px;
-            }
-        }
+      min-height: 450px;
+      margin-top: 40px;
     }
-
-    @media only screen and (min-width: 728px) {
-        .floor {
-            div {
-                .animal {
-                    height: 140%;
-                    top: -10%
-                }
-
-                .fire {
-                    height: 140%;
-                    top: -130%;
-                }
-            }
-        }
-
-        section {
-            margin-top: 40px;
-            min-height: 450px;
-        }
-    }
+  }
 }
