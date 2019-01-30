@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 20px;
 
     h2 {
       @include text-lava();
@@ -86,28 +87,62 @@
 
   @media only screen and (min-width: 728px) {
     .order-text {
+      margin-top: 70px;
+
       p {
         width: 33%;
       }
     }
 
     .order-form {
-      width: 100%;
+      height: 100%;
       flex-direction: row;
 
       form {
         width: 50%;
+        height: 100%;
+        justify-content: center;
       }
 
       div {
         width: 50%;
+        height: 100%;
 
         img {
+          height: 70%;
+          position: relative;
+          top: 10%;
+          width: initial;
           margin-top: 0;
-          width: 50%;
-          height: 100%;
         }
       }
     }
+  }
+}
+
+@keyframes wrongInput {
+  from {
+    transform: translateX(0px)
+  }
+
+  20% {
+    transform: translateX(5px);
+  }
+
+  40% {
+    transform: translateX(-5px);
+  }
+
+  60% {
+    transform: translateX(5px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  to {
+    transform: translateX(0px);
+    ;
   }
 }

@@ -8,7 +8,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        justify-content: center;
+        flex-direction: column;
 
         .animal {
             position: relative;
