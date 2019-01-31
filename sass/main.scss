@@ -1,17 +1,23 @@
 // Base
-@import "base/variables",
-        "base/mixins",
-        "base/reset";
+@import "base/reset",
+        "base/typography";
+
+// Abstracts
+@import "abstracts/variables",
+        "abstracts/mixins";
+
+// Layout
+@import "layout/grid",
+        "layout/header",
+        "layout/navigation",
+        "layout/footer";
+
+// Sections
+@import "sections/sections";
 
 // Components
-@import "components/typography",
-        "components/grid",
-        "components/header",
-        "components/navigation",
-        "components/sections/sections",
-        "components/aside",
+@import "components/aside",
         "components/lava",
-        "components/footer",
         "components/overlay";
 
 body {
