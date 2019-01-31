@@ -1,7 +1,7 @@
 @import "section_what",
-        "section_order",
+        "section_rules",
         "section_facts",
-        "section_rules";
+        "section_order";
 
 section {
   display: flex;
@@ -9,20 +9,4 @@ section {
   color: $text-color;
   background-color: $primary-color;
   flex-direction: column;
-
-  &:nth-child(2) {
-    grid-area: content1;
-  }
-
-  &:nth-child(4) {
-    grid-area: content2;
-  }
-
-  &:nth-child(6) {
-    grid-area: content3;
-  }
-
-  &:nth-child(8) {
-    grid-area: content4;
-  }
 }
