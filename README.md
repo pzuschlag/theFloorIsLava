@@ -1,4 +1,4 @@
-# The Floor is Lava
+# 🔥 The Floor is Lava 🔥
 A website that shows what "The ground is lava" is and how to play it.
 
 ### **Der Boden ist was?**
